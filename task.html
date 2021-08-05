@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ height:500px;
+    background-image: linear-gradient(45deg, #00DBDE 0%, #FC00FF 100%);
+
+
+}
+
+.child {
+  
+  width: 600px;
+  height:400px ;
+  background-color: transparent;
+  border: 2px solid #0d0c0e;
+  margin: auto;
+}
+ header{
+height:50px;
+background-color: rgb(255, 0, 212);
+
+}
+ h3{
+    /* margin: auto;
+    width:30%;
+    padding: 10px; */
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+form{
+    padding: 60px;
+    font-size: medium;
+    height: 100%;
+}
+#form{
+  
+    
+    margin-top: -50px;
+}
+  input{
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+}
+ #form label,input{
+    display: inline;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+input{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.name1{
+    float: left;
+    margin-right: 50px;
+}
+.name2{
+    float: right;
+    margin-right: 10px;
+}
+table,th,td{
+    border-collapse: collapse;
+}
+    </style>
+</head>
+
+<body>
+    <h1>Contact form</h1>
+    <div class="flex-container">
+        <div class=child>
+            <header>
+                <h3>Contact Us</h3> 
+                <form method="GET" action="#">
+                    <label for=name>Name</label>
+                    <input type="text" id=name><br><br>
+                    <label for=email>Email</label>
+                    <input type="text" id=email ><br><br>
+                    <label for=query>Query</label><br>
+                    <textarea id=query style="margin-left: 50px;" rows="4" cols="30"></textarea><br>
+                    <input style="margin-left: 150px;margin-top: 40px;resize: none;background-color:blueviolet;font-size: large;padding: 15px;" value="send" type="submit">
+                </form>
+            </header>
+        </div>
+    </div>
+<br>
+<h1>Suscription Form</h1>
+    <div class="flex-container">
+        <div class=child>
+            <header>
+                <h3> Yes i want to subscribe for MAG-O-ZINE</h3>
+             </header><br>
+            <form id=form>
+
+                    <div class=name1>
+                      <input type="text" id=fname value=Mayuresan><br>
+                      <label for=fname>First Name</label>
+                    </div>
+                    
+                      <input type="text" id=lname><br>
+                      <label for=fname>Last Name</label><br>
+                    
+                      <input style="width: 100%;" type="address" id=address><br>
+                      <label for=address>Address</label><br>
+                      <div>
+                      <div class=name1>
+                        <input type="text" style="width: 100px;" id=city><br>
+                        <label  for=city>City</label>
+                      </div>
+                      <div class=name2>
+                        <input type="text" style="width: 100px;margin-top:-500px" id=city><br>
+                        <label  for=city>ZIP</label>
+                      </div>
+                      <input type="text" style="width: 100px;" id=State><br>
+                        <label for=state>State</label>
+                    </div>
+                    <br>
+
+                         <label  for=stype>Subscription for</label>
+                         <input type="radio" id=1year name="sub" >
+                         <label for="1year" name="sub">1 year($19.95)</label>
+                         <input type="radio" id=2year  name="sub" >
+                         <label for="2year">2 year($30)</label><br><br>
+
+                         <label  for=stype>send me information about</label><br>
+                         <input type="checkbox" id="Computer" name="Computer" value="Bike">
+                         <label for="Computer"> Computer zine</label><br>
+                         <input type="checkbox" id="Fishing" name="Fishing" value="Bike">
+                         <label for="Fishing"> Fishing zine</label><br>
+                         <input type="checkbox" id="Computer" name="cat" value="Bike">
+                         <label for="Cat"> Cat zine</label><br>
+                         
+            </form>
+        </div>
+    </div>
+
+
+    <div>
+        <h1 style="text-align: center;">Health Chart</h1>
+        <table border='1'style="width:100%" >
+            <tr>
+                <th rowspan="2">State of Health</th>
+                <th colspan="2">Fasting Value</th>
+                <th>After Eating</th>
+            </tr>
+            <tr>
+              <th>Minimum</th>
+              <th>Maximum</th>
+              <th>2 hours after eating</th>
+            </tr>
+            <tr>
+                <td>Healthy</td>
+                <td>70</td>
+                <td>100</td>
+                <td>Less than 140</td>
+            </tr>
+            <tr>
+                <td>Pre-Diabetes</td>
+                <td>101</td>
+                <td>126</td>
+                <td>140 to 200</td>
+            </tr>
+            <tr>
+                <td>Diabetes</td>
+                <td>More than 126</td>
+                <td>N?A</td>
+                <td>More than 200</td>
+            </tr>
+        </table>
+
+        
+    </div>
+    <h1>working with List</h1>
+<div>
+    <ul>
+        <li>Programming Language
+            <ul>
+                <li>Javascript
+                    <ul>
+                        <li>Angular</li>
+                        <li>React</li>
+                        <li>vue.JS</li>
+                     </ul>
+                </li>
+                <li>Python
+                    <ul>
+                        <li>Django</li>
+                        <li>Flask</li>
+                     </ul>
+                </li>
+                <li>Java
+                    <ul>
+                        <li>spring</li>
+                        <li>Maven</li>
+                        <li>Hibernate</li>
+                     </ul>
+                </li>
+             </ul>             
+        </li>
+    </li>
+        <li>Database
+            <ul>
+                <li>Mysql</li>
+                <li>casandra</li>
+                <li>MongoDB</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3><strong>Add the below line and Highlight it without using any CSS.</strong></h3>
+    <p><mark>Html and css is awesome</mark></p>
+
+    <h3><strong>Create an element that helps you to open the https://google.com in separate new tab.
+    </strong></h3>
+
+    <a href="https://www.google.com/" target="_blank">click to open google in new tab</a>
+
+    
+</div>
+</body>
+</html>
